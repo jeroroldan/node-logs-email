@@ -12,15 +12,9 @@ const fileSystemLogRepository = new LogRepositoryImpl(
 export class Server {
   public static start(){
     const emailService = new EmailService();
-    emailService.sendEmail({
-      to: "jeronimoroldan12@gmail.com",
-      subject: "log de sistema",
-      htmlBody: `
-        <h2>Log de sistema-NOC </h2>
-        <p>Las contraseñas de las aplicaciones son menos seguras que las de las aplicaciones y los servicios actualizados que utilizan estándares de seguridad modernos. Antes de crear una contraseña para una aplicación, debes com</p>
-        <p>Ver log adjuntos</p>
-      `,
-    });
+    // emailService.sendEmailWithFileSystemLogs(
+    //   ['jeronimoroldan12@gmail.com']
+    // );
     // CronService.createJob('*/5 * * * * *', () => {
     //   new CheckService(
     //     fileSystemLogRepository,
