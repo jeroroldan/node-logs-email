@@ -8,3 +8,5 @@
 {"message":"Service https://google.com working","level":"low","createdAt":"2024-09-08T23:19:10.237Z","origin":"check-service.ts"}
 {"message":"Service https://google.com working","level":"low","createdAt":"2024-09-08T23:19:15.244Z","origin":"check-service.ts"}
 {"message":"Service https://google.com working","level":"low","createdAt":"2024-09-08T23:19:20.325Z","origin":"check-service.ts"}
+{"message":"Email sent","level":"low","createdAt":"2024-09-08T23:41:54.246Z","origin":"email.service.ts"}
+{"message":"Log email sent","level":"low","createdAt":"2024-09-08T23:59:16.903Z","origin":"send-email-logs.ts"}
