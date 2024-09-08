@@ -21,16 +21,17 @@ export class CheckService implements CheckServiceInterface {
     try {
       const req = await fetch(url);
       if (!req.ok) throw new Error(`Error on check service ${url}`);
-      const log = new LogEntity(`Service ${ url } working`, LogSeverityLevel.LOW);
+      const log = new LogEntity({message:`Service ${ url } working`, level:LogSeverityLevel.LOW, origin: 'check-service.ts'});
       this.logRepository.saveLog(log);
       this.successCallback();
       return true;
     } catch (error) {
       const errorMessage = `${ url } is not ok. ${ error }`
-      const log = new LogEntity(
-        errorMessage,
-        LogSeverityLevel.HIGH
-      );
+      const log = new LogEntity({
+        message: `Service ${url} working`,
+        level: LogSeverityLevel.LOW,
+        origin: 'check-service.ts',
+      });
       this.logRepository.saveLog(log);
       this.errorCallback(errorMessage)
       return false;
