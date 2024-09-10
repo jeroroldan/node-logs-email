@@ -16,7 +16,9 @@ export class Server {
   public static start(){
     new SendEmailLogs(emailService, fileSystemLogRepository).execute([
       "jeronimoroldan12@gmail.com",
-    ]);
+    ]
+    
+    );
     // const emailService = new EmailService(fileSystemLogRepository);
     // emailService.sendEmailWithFileSystemLogs(
     //   ['jeronimoroldan12@gmail.com']

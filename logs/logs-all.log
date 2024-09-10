@@ -10,3 +10,4 @@
 {"message":"Service https://google.com working","level":"low","createdAt":"2024-09-08T23:19:20.325Z","origin":"check-service.ts"}
 {"message":"Email sent","level":"low","createdAt":"2024-09-08T23:41:54.246Z","origin":"email.service.ts"}
 {"message":"Log email sent","level":"low","createdAt":"2024-09-08T23:59:16.903Z","origin":"send-email-logs.ts"}
+{"message":"Log email sent","level":"low","createdAt":"2024-09-10T01:55:30.890Z","origin":"send-email-logs.ts"}
